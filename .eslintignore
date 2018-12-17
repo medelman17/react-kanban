@@ -1,0 +1,6 @@
+node_modules
+public
+graphql
+prisma
+*.test.js
+serviceWorker.js

@@ -1,0 +1,7 @@
+.tasklistCustom {
+  margin-right: 25px;
+}
+
+.tasklistCustom:first-of-type {
+  margin-left: 25px;
+}

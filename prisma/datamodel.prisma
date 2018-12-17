@@ -1,0 +1,25 @@
+type TaskList {
+  id: ID! @unique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  title: String!
+  headerColor: String @default(value: "#333")
+  tasks: [Task!]!
+  user: User!
+}
+
+type Task {
+  id: ID! @unique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  text: String!
+  taskList: TaskList!
+}
+
+type User {
+  id: ID! @unique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  name: String!
+  taskLists: [TaskList!]!
+}
